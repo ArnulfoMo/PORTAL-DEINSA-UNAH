@@ -13,15 +13,22 @@
     <header>
         <img src="" alt="Logo">
         <h1>Portal DeinsaHN</h1>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#catalogo">Catalogo</a>
-            <a href="#oferta">Ofertas del mes</a>
-            <a href="#cotizar">Cotizacion</a>
-            <a href="#horario">Horario</a>
-            <a href="#cotizar">Cotizar por WhatsApp</a>
+        <div>
 
-        </nav>
+
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#catalogo">Catalogo</a>
+                <a href="#oferta">Ofertas del mes</a>
+                <a href="#cotizar">Cotizacion</a>
+                <a href="#horario">Horario</a>
+                <a href="#cot">Cotizar formal</a>
+
+                <p><span>OFERTA</span></p>
+
+            </nav>
+
+        </div>
         <p>
             Numeros de telefono: +504 9442-7551 / 9323-1598.
         </p>
@@ -181,7 +188,7 @@
                 <article>
                     <h3>Transformador Pad</h3>
                     <p><span>OFERTA</span></p>
-                    
+
                     <p>Categoria: tension</p>
                     <p>Precio anterior: 100 lps</p>
                     <p>Nuevo precio: 90 lps</p>
@@ -202,7 +209,7 @@
 
                 <article>
                     <h3>Panel solar</h3>
-                   <p><span>OFERTA</span></p>
+                    <p><span>OFERTA</span></p>
                     <p>Categoria: tension</p>
                     <p>Precio anterior: 100 lps</p>
                     <p>Nuevo precio: 90 lps</p>
@@ -272,21 +279,75 @@
 
             </article>
 
-            <article>
+            <article >
                 <h3>Tabla compartiva</h3>
                 <table>
                     <thead>
                         <th>Codigo</th>
                         <th>Equipo industrial</th>
-                        <th>R</th>
-                        <th>Codigo</th>
-                        <th>Codigo</th>
-                        <th>Codigo</th>
+                        <th>capacidad</th>
+                        <th>Norma</th>
+                        <th>Estado</th>
                     </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Transformador</td>
+                            <td>200W</td>
+                            <td>Estandar</td>
+                            <td>nuevo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Transformador</td>
+                            <td>200W</td>
+                            <td>Estandar</td>
+                            <td>nuevo</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Transformador</td>
+                            <td>200W</td>
+                            <td>Estandar</td>
+                            <td>nuevo</td>
+                        </tr>
+                    </tbody>
                 </table>
 
             </article>
 
+        </section>
+
+        <section id="cot">
+            <h2>Formulario para licitacion</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+
+                <label for="nombr">Nombre de la empresa</label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese nombre empresa" required>
+
+                <label for="RTN">RTN NUMERico</label>
+                <input type="number" name="RTN" id="RTN" placeholder="Ingrese RTN" required min="14" maxlength="14" >
+
+                <label for="Correo">Correo corporativo</label>
+                <input type="email" name="Correo" id="Correo" placeholder="ingrese correo" required>
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="ingrese telefono" required>
+                
+                <label for="departa">Seleccione departamento</label>
+                <select name="departa" id="departa">
+                    <option value="0">Sleccione</option>
+                    <option value="cortes">Cortes</option>
+                    <option value="FM">Francisco Morazan</option>
+                    <option value="CM">Comayagua</option>
+                    <option value="Cho">Choluteca</option>
+                    <option value="olan">Olancho</option>
+                </select>
+
+                <label for="verifica">Verifica terminos de garantia y cotizacion</label>
+                <input type="checkbox" name="terminos" id="terminos" required>
+
+            </form>
         </section>
 
 
