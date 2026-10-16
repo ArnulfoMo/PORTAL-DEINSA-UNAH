@@ -10,28 +10,58 @@
 
 <body>
 
-    <header>
-        <img src="img/logojpg.jpg" alt="Logo">
-        <h1>Portal DeinsaHN</h1>
-        <div>
+    <header class="bg-slate-800 text-white p-4">
 
+        <h1 class="text-2xl font-bold text-center mb-4">
+            Portal DeinsaHN
+        </h1>
 
-            <nav>
-                <a href="#inicio">Inicio</a>
-                <a href="#catalogo">Catalogo</a>
-                <a href="#oferta">Ofertas del mes</a>
-                <a href="#cotizar">Cotizacion</a>
-                <a href="#contacto">Contacto</a>
+        <div class="flex items-center justify-center max-w-6xl mx-auto gap-6">
 
-                <a href="">Cotizar por Whatsapp</a>
+            <img src="img/logojpg.jpg" alt="Logo DEINSA" class="w-24 h-16 object-contain">
+
+            <!-- Menu compus -->
+            <nav class="hidden md:flex items-center gap-5">
+
+                <a href="#inicio" class="hover:text-blue-300">Inicio</a>
+                <a href="#catalogo" class="hover:text-blue-300">Catalogo</a>
+                <a href="#oferta" class="hover:text-blue-300">Ofertas del mes</a>
+                <a href="#cotizar" class="hover:text-blue-300">Cotizaciones</a>
+                <a href="#contacto" class="hover:text-blue-300">Contacto</a>
+
+                <a href="" class="bg-green-600 hover:bg-green-700 px-3 py-2 rounded"> Cotizar por WhatsApp</a>
 
             </nav>
 
+            <!-- Menu telefono -->
+            <details class="md:hidden relative">
+
+                <summary class="cursor-pointer text-2xl">---</summary>
+
+                <nav class="absolute right-0 top-full mt-2 bg-slate-700 p-4 rounded flex flex-col gap-3 w-48 z-10">
+
+                    <a href="#inicio">Inicio</a>
+                    <a href="#catalogo">Catalogo</a>
+                    <a href="#oferta">Ofertas del mes</a>
+                    <a href="#cotizar">Cotizaciones</a>
+                    <a href="#contacto">Contacto</a>
+
+                    <a href="" class="bg-green-600 hover:bg-green-700 px-3 py-2 rounded"> Cotizar por WhatsApp</a>
+
+                </nav>
+
+            </details>
+
         </div>
-        <p>
-            Numeros de telefono: +504 9442-7551 / 9323-1598.
+
+        <p class="text-center text-sm mt-4">
+            Telefonos: +504 9442-7551 / 9323-1598
         </p>
-        <p>Horario de atencion: Lunes a Viernes de 8:00 am a 5:00 pm</p>
+
+        <p class="text-center text-sm">
+            Horario: Lunes a Viernes de 8:00 am a 5:00 pm
+        </p>
+
     </header>
 
     <main>
