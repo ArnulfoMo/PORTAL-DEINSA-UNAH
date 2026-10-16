@@ -106,10 +106,10 @@
                 <article class="bg-white p-4 rounded-lg shadow">
                     <h3 class="text-xl font-bold mb-2">Interruptor de Potencia Industrial</h3>
                     <p class="text-gray-600">Categoria: Media Tension</p>
-                    <p class="text-blue-700 font-bold text-lg my-2">Precio: L. 85000</p>
                     <p class="text-gray-600">Garantia: 2 años</p>
                     <p class="text-gray-600">Marca: Schneider Electric</p>
-                    <p class="text-gray-600">Tension: 13,800 V</p>
+                    <p class="text-gray-600">Tension: 13800 V</p>
+                    <p class="text-blue-700 font-bold text-lg my-2">Precio: L. 85000</p>
                     <img src="img/interruptorPotencia.jpg" alt="" class="w-full h-40 object-contain mt-4">
                 </article>
 
@@ -416,25 +416,30 @@
 
         </section>
 
-        <section id="cot">
-            <h2>Formulario para licitacion</h2>
-            <form action="#" method="post" enctype="multipart/form-data">
+        <section id="cot" class="p-6 bg-gray-100">
+            <h2 class="text-2xl font-bold text-center mb-6">Formulario para licitacion</h2>
+            <form action="#" method="post" enctype="multipart/form-data"
+                class="bg-white p-6 rounded-lg shadow max-w-2xl mx-auto flex flex-col gap-3">
 
-                <label for="nombr">Nombre de la empresa</label>
-                <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese nombre empresa" required>
+                <label for="nombr" class="font-medium">Nombre de la empresa</label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese nombre empresa" required
+                    class="border rounded p-2">
 
-                <label for="RTN">RTN NUMERico</label>
-                <input type="number" name="RTN" id="RTN" placeholder="Ingrese RTN" required min="14" maxlength="14">
+                <label for="RTN" class="font-medium">RTN Numerico</label>
+                <input type="number" name="RTN" id="RTN" placeholder="Ingrese RTN" required min="14" maxlength="14"
+                    class="border rounded p-2">
 
-                <label for="Correo">Correo corporativo</label>
-                <input type="email" name="Correo" id="Correo" placeholder="ingrese correo" required>
+                <label for="Correo" class="font-medium">Correo corporativo</label>
+                <input type="email" name="Correo" id="Correo" placeholder="Ingrese su correo" required
+                    class="border rounded p-2">
 
-                <label for="telefono">Telefono</label>
-                <input type="tel" name="telefono" id="telefono" placeholder="ingrese telefono" required>
+                <label for="telefono" class="font-medium">Telefono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su telefono" required
+                    class="border rounded p-2">
 
-                <label for="departa">Seleccione departamento</label>
-                <select name="departa" id="departa">
-                    <option value="0">Sleccione</option>
+                <label for="departa" class="font-medium">Seleccione departamento</label>
+                <select name="departa" id="departa" class="border rounded p-2">
+                    <option value="0">Seleccione</option>
                     <option value="cortes">Cortes</option>
                     <option value="FM">Francisco Morazan</option>
                     <option value="CM">Comayagua</option>
@@ -442,12 +447,16 @@
                     <option value="olan">Olancho</option>
                 </select>
 
-                <label for="verifica">Verifica terminos de garantia y cotizacion</label>
-                <input type="checkbox" name="terminos" id="terminos" required>
+                <label for="terminos" class="mt-2">
+                    <input type="checkbox" name="terminos" id="terminos" required class="mr-2">
+                    Acepto los terminos de garantia y cotizacion
+                </label>
 
 
-                <button type="submit">Enviar cotizacion</button>
-                <button type="reset">Limpiar formulario</button>
+                <button type="submit" class="bg-slate-800 text-white p-3 rounded hover:bg-slate-700 mt-3">Enviar
+                    cotizacion</button>
+                <button type="reset" class="bg-gray-200 text-gray-800 p-3 rounded hover:bg-gray-300">Limpiar
+                    formulario</button>
 
             </form>
         </section>
