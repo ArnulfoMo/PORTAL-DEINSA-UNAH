@@ -282,35 +282,34 @@
             <article>
                 <h3>Cotiza ahora</h3>
                 <p>SI LLEVA MAS DE 5 TIENE UN DESCEUNTO DE 8%</p>
-                <form action="" method="post" enctype="multipart/form-data">
+
+                <div>
                     <label for="cantidad">Ingrese la cantidad del producto</label>
-                    <input type="number" name="cantidad" id="cantidad">
+                    <input type="number" name="cantidad" id="cantidad" min="1">
 
                     <label for="producto">Seleccione el producto</label>
                     <select name="producto" id="producto">
-                        <option value="">Slecciones</option>
-                        <option value="transfomador">Transformador L. 250</option>
-                        <option value="panel solar">Panel solar L. 250</option>
-                        <option value="arrancador">Arrancador L. 100</option>
-                        <option value="cargador">Cargador L. 500</option>
+                        <option value="">Seleccione</option>
+                        <option value="panel">Panel Solar - L. 3650</option>
+                        <option value="inversor">Inversor Hibrido - L. 98200</option>
+                        <option value="arrancador">Arrancador Suave - L. 46900</option>
+                        <option value="transformador">Transformador - L. 285000</option>
                     </select>
 
                     <label for="ciudad">seleccione la ciudad</label>
                     <select name="ciudad" id="ciudad">
                         <option value="">Selecciones</option>
-                        <option value="sps">sps flete L 500</option>
-                        <option value="tgu">TGU FLETE L> 1200</option>
-                        <option value="otro">OTRO FLETE L. 2000</option>
+                        <option value="sps">San Pedro Sula - L. 500</option>
+                        <option value="tgu">Tegucigalpa - L. 1200</option>
+                        <option value="otro">Otras regiones - L. 2000</option>
                     </select>
 
-                    <button>Calcular precio</button>
-
-                    <p>
-                        <span>El total cotizado es de L. X</span>
-                    </p>
+                    <button type="button">Calcular Presupuesto</button>
 
 
-                </form>
+                    <p>El total cotizado es de L. X</p>
+
+                </div>
 
 
 
